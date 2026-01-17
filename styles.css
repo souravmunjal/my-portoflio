@@ -1,14 +1,24 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Quirky font */
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #f9ca24); /* Rainbow gradient background */
+    animation: backgroundShift 10s ease-in-out infinite; /* Animated background */
+}
+
+@keyframes backgroundShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent */
+    color: #333;
     padding: 1rem;
+    text-align: center;
+    border-bottom: 5px solid #ff6b6b;
 }
 
 nav ul {
@@ -18,26 +28,82 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 1rem;
+    margin: 0 1rem;
 }
 
 nav a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff6b6b;
 }
 
 section {
     padding: 2rem;
-    margin: 2rem 0;
+    margin: 2rem auto;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    animation: float 3s ease-in-out infinite; /* Floating animation */
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
 }
 
 #home {
-    background: #f4f4f4;
     text-align: center;
+    color: #333;
+}
+
+#home h1 {
+    font-size: 3rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
 }
 
 .project {
-    border: 1px solid #ddd;
+    border: 3px solid #4ecdc4;
     padding: 1rem;
     margin: 1rem 0;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.project-link {
+    display: inline-block;
+    background: #f9ca24;
+    color: #333;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.project-link:hover {
+    background: #ff6b6b;
+    color: white;
 }
