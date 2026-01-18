@@ -9,6 +9,7 @@ body {
     overflow-x: hidden;
     font-size: 0.6rem; /* Smaller font */
     animation: colorShift 10s ease-in-out infinite;
+    scroll-behavior: smooth;
 }
 
 @keyframes colorShift {
@@ -46,6 +47,29 @@ section {
     background: linear-gradient(45deg, #000, #111);
     animation: flicker 2s infinite alternate;
     border-color: #ffff00;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid #ffff00;
+    border-radius: 10px;
+}
+
+.menu-item {
+    color: #ffff00;
+    text-decoration: none;
+    font-size: 0.6rem;
+    font-family: 'Press Start 2P', monospace;
+    transition: color 0.3s;
+}
+
+.menu-item:hover {
+    color: #ff0080;
 }
 
 @keyframes flicker {
