@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retro Game Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -56,16 +57,21 @@
         </div>
     </div>
 
-    <section id="about">
-        <h2>PLAYER BIO</h2>
-        <p>CODE MASTER | DESIGN WIZARD | QUEST COMPLETER</p>
-        <p>Level up your projects with my skills!</p>
-    </section>
-
-    <section id="contact">
-        <h2>GAME OVER? CONTACT ME</h2>
-        <p>EMAIL: player@retro.com</p>
-        <p>SCORE HIGH: Let's collaborate!</p>
+    <section id="info">
+        <div class="tabs">
+            <button class="tab-button active" data-tab="about">PLAYER BIO</button>
+            <button class="tab-button" data-tab="contact">CONTACT</button>
+        </div>
+        <div class="tab-content active" id="about">
+            <h2>PLAYER BIO</h2>
+            <p>CODE MASTER | DESIGN WIZARD | QUEST COMPLETER</p>
+            <p>Level up your projects with my skills!</p>
+        </div>
+        <div class="tab-content" id="contact">
+            <h2>GAME OVER? CONTACT ME</h2>
+            <p>EMAIL: player@retro.com</p>
+            <p>SCORE HIGH: Let's collaborate!</p>
+        </div>
     </section>
 
     <footer>
