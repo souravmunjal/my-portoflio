@@ -22,5 +22,5 @@ document.querySelectorAll('.menu-item').forEach(item => {
 
 function showPage(id) {
     document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
-    document.getElementById(id + '-page').classList.add('active');
+    document.getElementById(id + '-content').classList.add('active');
 }
