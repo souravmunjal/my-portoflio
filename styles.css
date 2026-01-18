@@ -2,6 +2,7 @@ body {
     font-family: 'Press Start 2P', monospace;
     margin: 0;
     padding: 0;
+    padding-top: 4rem; /* Space for fixed menu */
     background: linear-gradient(45deg, #ff0080, #8000ff, #00ff80, #ffff00); /* Punchy gradient */
     color: #fff;
     line-height: 1.6;
@@ -50,14 +51,17 @@ section {
 }
 
 #menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin: 1rem 0;
     padding: 0.5rem;
     background: rgba(0, 0, 0, 0.9);
-    border: 2px solid #ffff00;
-    border-radius: 10px;
+    border-bottom: 2px solid #ffff00;
+    z-index: 100;
 }
 
 .menu-item {
