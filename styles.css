@@ -7,6 +7,7 @@ body {
     line-height: 1.6;
     position: relative;
     overflow-x: hidden;
+    font-size: 0.6rem; /* Smaller font */
     animation: colorShift 10s ease-in-out infinite;
 }
 
@@ -32,8 +33,8 @@ body {
 }
 
 section {
-    padding: 2rem;
-    margin: 2rem auto;
+    padding: 1rem;
+    margin: 1rem auto;
     max-width: 1200px;
     background: rgba(0, 0, 0, 0.8);
     border: 4px solid #ff0080;
@@ -53,7 +54,7 @@ section {
 }
 
 #home h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #ffff00;
     text-shadow: 0 0 10px #ffff00;
 }
@@ -65,7 +66,7 @@ section {
 
 .main-container {
     display: flex;
-    margin: 2rem auto;
+    margin: 1rem auto;
     max-width: 1200px;
 }
 
@@ -140,4 +141,54 @@ section {
 .project-link:hover {
     background: #ffff00;
     color: #000;
+}
+
+/* Responsive design for better boundaries and scrollability */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    
+    #project-list {
+        flex: none;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    section {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+    
+    body {
+        font-size: 0.5rem;
+    }
+    
+    #home h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        margin: 0.5rem;
+    }
+    
+    #project-list, #project-details {
+        padding: 0.5rem;
+    }
+    
+    .project-thumb {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    border-top: 4px solid #ff0080;
+    margin-top: 1rem;
+    color: #fff;
 }
