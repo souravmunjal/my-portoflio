@@ -12,73 +12,62 @@
     <div class="crt"></div> <!-- CRT effect overlay -->
     
     <nav id="menu">
-        <a href="#home" class="menu-item">🏠 Home</a>
-        <a href="#projects" class="menu-item">🎮 Projects</a>
-        <a href="#info" class="menu-item" data-tab="contact">📧 Contact</a>
+        <a href="#" class="menu-item" data-page="home">🏠 Home</a>
+        <a href="#" class="menu-item" data-page="projects">🎮 Projects</a>
+        <a href="#" class="menu-item" data-page="contact">📧 Contact</a>
     </nav>
     
-    <section id="home">
-        <h1>RETRO PORTFOLIO</h1>
-        <p>LOADING... PRESS START</p>
-    </section>
-
-    <div class="main-container" id="projects">
-        <div id="project-list">
-            <h2>GAME LEVELS</h2>
-            <div class="project-item" data-project="1">
-                <img src="images/project1.jpg" alt="Project 1" class="project-thumb">
-                <p>LEVEL 1</p>
-            </div>
-            <div class="project-item" data-project="2">
-                <img src="images/project2.jpg" alt="Project 2" class="project-thumb">
-                <p>LEVEL 2</p>
-            </div>
-            <div class="project-item" data-project="3">
-                <img src="images/project3.jpg" alt="Project 3" class="project-thumb">
-                <p>LEVEL 3</p>
-            </div>
-            <!-- More project items will be added here -->
+    <main id="main-content">
+        <div id="home-page" class="page active">
+            <h1>RETRO PORTFOLIO</h1>
+            <p>LOADING... PRESS START</p>
         </div>
         
-        <div id="project-details">
-            <div class="project-detail active" id="detail1">
-                <h3>LEVEL 1: PROJECT 1</h3>
-                <img src="images/project1.jpg" alt="Project 1" class="detail-img">
-                <p>Description of project 1.</p>
-                <a href="#" class="project-link">PLAY NOW</a>
+        <div id="projects-page" class="page">
+            <h2>GAME LEVELS</h2>
+            <div class="project-list">
+                <div class="project-item" data-project="1">
+                    <img src="images/project1.jpg" alt="Project 1" class="project-thumb">
+                    <p>LEVEL 1</p>
+                </div>
+                <div class="project-item" data-project="2">
+                    <img src="images/project2.jpg" alt="Project 2" class="project-thumb">
+                    <p>LEVEL 2</p>
+                </div>
+                <div class="project-item" data-project="3">
+                    <img src="images/project3.jpg" alt="Project 3" class="project-thumb">
+                    <p>LEVEL 3</p>
+                </div>
             </div>
-            <div class="project-detail" id="detail2">
-                <h3>LEVEL 2: PROJECT 2</h3>
-                <img src="images/project2.jpg" alt="Project 2" class="detail-img">
-                <p>Description of project 2.</p>
-                <a href="#" class="project-link">PLAY NOW</a>
+            
+            <div class="project-details">
+                <div class="project-detail active" id="detail1">
+                    <h3>LEVEL 1: PROJECT 1</h3>
+                    <img src="images/project1.jpg" alt="Project 1" class="detail-img">
+                    <p>Description of project 1.</p>
+                    <a href="#" class="project-link">PLAY NOW</a>
+                </div>
+                <div class="project-detail" id="detail2">
+                    <h3>LEVEL 2: PROJECT 2</h3>
+                    <img src="images/project2.jpg" alt="Project 2" class="detail-img">
+                    <p>Description of project 2.</p>
+                    <a href="#" class="project-link">PLAY NOW</a>
+                </div>
+                <div class="project-detail" id="detail3">
+                    <h3>LEVEL 3: PROJECT 3</h3>
+                    <img src="images/project3.jpg" alt="Project 3" class="detail-img">
+                    <p>Description of project 3.</p>
+                    <a href="#" class="project-link">PLAY NOW</a>
+                </div>
             </div>
-            <div class="project-detail" id="detail3">
-                <h3>LEVEL 3: PROJECT 3</h3>
-                <img src="images/project3.jpg" alt="Project 3" class="detail-img">
-                <p>Description of project 3.</p>
-                <a href="#" class="project-link">PLAY NOW</a>
-            </div>
-            <!-- More details will be added here -->
         </div>
-    </div>
-
-    <section id="info">
-        <div class="tabs">
-            <button class="tab-button active" data-tab="about">PLAYER BIO</button>
-            <button class="tab-button" data-tab="contact">CONTACT</button>
-        </div>
-        <div class="tab-content active" id="about">
-            <h2>PLAYER BIO</h2>
-            <p>CODE MASTER | DESIGN WIZARD | QUEST COMPLETER</p>
-            <p>Level up your projects with my skills!</p>
-        </div>
-        <div class="tab-content" id="contact">
+        
+        <div id="contact-page" class="page">
             <h2>GAME OVER? CONTACT ME</h2>
             <p>EMAIL: player@retro.com</p>
             <p>SCORE HIGH: Let's collaborate!</p>
         </div>
-    </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Retro Portfolio. All rights reserved.</p>
